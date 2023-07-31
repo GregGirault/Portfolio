@@ -1,0 +1,173 @@
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(./image/background_historique.jpg) no-repeat center/cover;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px 0;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: 2.5em;
+  text-shadow: 1px 1px 1px #e8e8e8;
+}
+
+.error {
+  width: 90%;
+  margin: auto;
+  padding: 15px;
+  background-color: #f44336;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+}
+
+form {
+  width: 90%;
+  max-width: 500px;
+  background-color: rgba(17, 17, 17, 0.8);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  transition: transform 0.3s ease-in-out;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #f2f2f2;
+  font-weight: 600;
+  text-transform: uppercase; 
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease-in-out; 
+  color: #f2f2f2;
+  background-color: rgba(17, 17, 17, 0.8);
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #aaa; 
+}
+
+input[type="submit"] {
+  display: block;
+  background-color: #f2f2f2;
+  color: #333;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 0 auto;
+  box-sizing: border-box;
+  margin-top: 10px;
+  text-transform: uppercase; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"]:hover {
+  background: #111111ed;
+}
+
+input[type="text"],
+textarea,
+form,
+input[type="submit"],
+label {
+  transition: all 0.3s ease;
+}
+
+/* le reste de votre code CSS... */
+
+#retour {
+  color: #f2f2f2;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  border: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+#retour::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -10px; 
+  width: calc(100% + 16px); 
+  height: calc(100% + 4px);
+  border: 2px solid #f2f2f2;
+  border-radius: 5px;
+  transform: scale(0);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+
+#retour:hover {
+  color: #f2f2f2;
+}
+
+#retour:hover::before {
+  transform: scale(1);
+  opacity: 1;
+}
+
+
+.bottom-links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.bottom-links a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+.bottom-links a:hover {
+  background-color: #ddd;
+}
+
+.toast {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  border-radius: 8px;
+  z-index: 10000;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: top 0.5s ease;
+}
+
+.toast.hidden {
+  top: -100px;
+}

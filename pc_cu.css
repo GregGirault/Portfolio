@@ -1,0 +1,30 @@
+h2 {
+  color: #333;
+  font-size: 2.5em;
+  margin-bottom: 1.5em;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+p {
+  color: #777;
+  font-size: 1.1em;
+  line-height: 1.8em;
+  margin-bottom: 1.5em;
+  max-width: 800px; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: #0088cc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #005580;
+  text-decoration: underline;
+}
+

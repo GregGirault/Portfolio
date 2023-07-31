@@ -1,0 +1,132 @@
+body {
+  background-color: white;
+  font-family: "Poppins", Arial, sans-serif;
+  background: url(./image/v856-kul-07.jpg) no-repeat;
+}
+
+
+.titre {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 40px;
+  color: transparent;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 1px #e8e8e8;
+  animation: fade-in 1s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    color: #f0f0f0;
+  }
+}
+
+
+#container {
+  width: 30%;
+  padding: 16px;
+  background-color: #333333e0;
+  margin: 0 auto;
+  border: 1px solid #f0f0f0;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+#container h1 {
+  text-align: center;
+  color: #f0f0f0;
+  font-size: 24px;
+}
+
+#container label {
+  color: #f0f0f0;
+  display: block;
+  margin: 10px 0 5px 0;
+  text-align: left;
+}
+
+#container input[type="text"],
+#container input[type="password"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+
+
+#container input[type="text"],
+#container input[type="password"]:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 2px #ddd;
+}
+
+#container input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  color: #333;
+  background-color: #cccccced;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+#container input[type="submit"]:hover {
+  background-color: #666666ed;
+  border: 1px solid #f0f0f0;
+  color: #f0f0f0;
+}
+
+#container input[type="submit"]:active{
+  background-color: #333333ed;
+}
+
+input[type="text"]:active {
+  background-color: #ccccccbc;
+  border: 1px solid #f0f0f0;
+}
+
+input[type="text"]:active::placeholder{
+  color: #f0f0f0;
+}
+
+
+#container a.button {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#container a.button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid #888;
+  border-radius: 17px;
+}
+
+
+
+
+#container p {
+  color: red;
+  text-align: center;
+  margin-top: 15px;
+}
